@@ -45,7 +45,7 @@ brews:
     repository:
       owner: jsumners-nr
       name: homebrew-testing
-      branch: "hello_world.{{ .Env.Actor }}.{{ .Tag }}"
+      branch: "hello_world.{{ .Env.ACTOR }}.{{ .Tag }}"
       token: "{{ .Env.PAT }}"
       pull_request:
         enabled: true
