@@ -35,7 +35,7 @@ jobs:
           version: latest
           args: release --clean
         env:
-          ACTOR: ${GITHUB_ACTOR}
-          ACTOR_EMAIL: gh-actions-${GITHUB_ACTOR}@github.com
+          ACTOR: ${{ github.actor }}
+          ACTOR_EMAIL: gh-actions-${{ github.actor }}@github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PAT: ${{ secrets.PAT }}
