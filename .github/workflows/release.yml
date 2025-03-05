@@ -38,4 +38,4 @@ jobs:
           ACTOR: ${GITHUB_ACTOR}
           ACTOR_EMAIL: gh-actions-${GITHUB_ACTOR}@github.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PAT: $${{ secrets.PAT }}
+          PAT: ${{ secrets.PAT }}
