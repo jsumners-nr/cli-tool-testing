@@ -34,7 +34,6 @@ changelog:
 brews:
   - name: hello-world
     homepage: https://github.com/jsumners-nr/cli-tool-testing
-    branch: "hello_world.{{ .Env.Actor }}.{{ .Tag }}"
     commit_author:
       name: "{{ .Env.ACTOR }}"
       email: "{{ .Env.ACTOR_EMAIL }}"
@@ -46,6 +45,7 @@ brews:
     repository:
       owner: jsumners-nr
       name: homebrew-testing
+      branch: "hello_world.{{ .Env.Actor }}.{{ .Tag }}"
       token: "{{ .Env.PAT }}"
       pull_request:
         enabled: true
